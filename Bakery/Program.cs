@@ -21,7 +21,7 @@ namespace Bakery
         Console.WriteLine("How many pastries would you like to order? Please enter a number:");
         string stringNumberOfPastriesToOrder = Console.ReadLine();
         int intNumberOfPastriesToOrder = int.Parse(stringNumberOfPastriesToOrder);
-        orderTotal = (intNumberOfLoavesToOrder.GetBreadPrice()) + (intNumberOfPastriesToOrder.GetPastryPrice());
+        orderTotal = (GetBreadPrice(intNumberOfLoavesToOrder, 5)) + (GetPastryPrice(intNumberOfPastriesToOrder, 5));
         Console.WriteLine("Thanks for your order! Your total is: " + orderTotal);
       }
       if (stringYesNoUnderstand.ToLower() == "no")
