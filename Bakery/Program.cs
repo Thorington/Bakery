@@ -21,11 +21,11 @@ namespace Bakery
         Console.WriteLine("How many pastries would you like to order? Please enter a number:");
         string stringNumberOfPastriesToOrder = Console.ReadLine();
         int intNumberOfPastriesToOrder = int.Parse(stringNumberOfPastriesToOrder);
-        orderTotal = (intNumberOfLoavesToOrder.getPrice()) + (intNumberOfPastriesToOrder.getPrice());
-        Console.WriteLine("Thanks for your order! Your total is: " + orderTotal)
+        orderTotal = (intNumberOfLoavesToOrder.GetBreadPrice()) + (intNumberOfPastriesToOrder.GetPastryPrice());
+        Console.WriteLine("Thanks for your order! Your total is: " + orderTotal);
       }
       if (stringYesNoUnderstand.ToLower() == "no")
-      Console.WriteLine("Let's try this again. You're at a shop that sells baked goods. Think about what a cookie is.");
+      Console.WriteLine("Let's try this again. You're at a shop that sells baked goods. Think about what a cookie is...");
       Main();
     }
     if (stringYesNoOrder.ToLower() == "no")

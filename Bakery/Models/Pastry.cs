@@ -5,12 +5,12 @@ namespace Bakery
 {
   public class Pastry
   {
-    public string PastryKind {get; set; }
+    public string NumberOfPastries {get; set; }
     public int Price {get; set; }
 
-    public Pastry(string pastryKind, int price)
+    public Pastry(string numberOfPastries, int price)
   {
-    PastryKind = pastryKind;
+    NumberOfPastries = numberOfPastries;
     Price = price;
   }
 

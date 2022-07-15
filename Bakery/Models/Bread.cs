@@ -5,23 +5,18 @@ namespace Bakery
 {
   public class Bread
   {
-    public int NumberOfLoaves {get; set; }
     public int Price {get; set; }
 
-    public Bread(int numberOfLoaves, int price)
+
+    public Bread(int price)
   {
-    NumberOfLoaves = numberOfLoaves;
     Price = price;
   }
 
-  //   public int GetBreadPrice()
-  // {
-  //   return _price;
-  // }
+    public int GetBreadPrice()
+  {
+    return price;
+  }
 
-  //  public static int BreadDeal(Bread loaf, int newPrice)
-  // {
-  //   return bread._price * newPercentage;
-  // }
   }
 }
