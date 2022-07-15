@@ -30,6 +30,6 @@ A user is welcomed to Pierre's Bakery and asked how many loaves of bread and how
 
 ## License
 
-[<a href=../Bakery.Solution/LICENSE>_MIT_</a>]
+[<a href=https://github.com/Thorington/bakery/LICENSE>MIT</a>]
 
 Copyright (c) _2022_ _Claire Thorington_
