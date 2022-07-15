@@ -5,10 +5,9 @@ namespace Bakery.Models
 {
   public class Bread
   {
-   public int Price { get; set; }
-
-    public Bread(int price)
+    public BreadLoaf(string loaf, int price)
   {
+    _loaf = loaf;
     _price = price;
   }
 
