@@ -10,8 +10,8 @@ namespace Bakery.ModelTests
     [TestMethod]
       public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newLoaf = new Bread("test", 5);
-      Assert.AreEqual(typeof(Bread), newLoaf.GetType());
+      Bread newBreadOrder = new Bread(1, 5);
+      Assert.AreEqual(typeof(Bread), newBreadOrder.GetType());
     }
     
   }
