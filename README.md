@@ -22,8 +22,7 @@ A user is welcomed to Pierre's Bakery and asked how many loaves of bread and how
 
 * Clone repository to desktop
 * Follow the steps on this page to install C# and .NET on your computer: [(https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-c-and-net)]
-* Navigate to the __Program.cs__ file in your terminal
-* To run program, type _$ dotnet run_
+* To run program, navigate to the __Bakery__ folder in your terminal and type _$ dotnet run_
 * To run tests, navigate to the __Bakery.Tests__ folder in your terminal and type _$ dotnet test_
 
 ## Known Bugs
