@@ -1,7 +1,7 @@
 using System;
 
 
-namespace Bakery.Models
+namespace Bakery
 {
   public class Bread
   {
