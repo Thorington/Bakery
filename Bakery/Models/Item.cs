@@ -5,6 +5,10 @@ namespace Bakery
 {
   public class Item
   {
-    // properties, constructors, methods, etc. go here
+   public void ItemConstructor_CreatesInstanceOfItem_Item()
+    {
+      // Item newItem = new Item("test"); //We pass in "test" as an argument here.
+      // Assert.AreEqual(typeof(Item), newItem.GetType());
+    }
   }
 }
