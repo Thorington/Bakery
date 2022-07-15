@@ -1,4 +1,6 @@
 # _Independent Project #7: Pierre's Bakery_
+
+![a picture of starfruit squares](img/lemonsquares.jpg)
 #### Contributors: _**Claire Thorington**_
 
 #### _A page demonstrating new skills in C# and .NET!_
@@ -9,8 +11,6 @@
 * Markdown
 * C#
 * .NET
-
-![a picture of starfruit squares](img/lemonsquares.jpg)
 
 ## Description
 
