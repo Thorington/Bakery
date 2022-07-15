@@ -10,6 +10,8 @@
 * C#
 * .NET
 
+![a picture of lemon squares](https://images-pw.pixieset.com/elementfield/5098089/DSC_0819-d1bcee4d.jpg)
+
 ## Description
 
 A user is welcomed to Pierre's Bakery and asked how many loaves of bread and how many pastries they'd like to order. The application returns the total cost of their order, given the following pricing structure:
