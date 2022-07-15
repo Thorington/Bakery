@@ -10,7 +10,7 @@
 * C#
 * .NET
 
-![a picture of lemon squares](https://images-pw.pixieset.com/elementfield/5098089/DSC_0819-d1bcee4d.jpg)
+![a picture of starfruit squares](img/lemonsquares.jpg)
 
 ## Description
 
