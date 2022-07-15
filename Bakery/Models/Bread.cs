@@ -1,9 +1,9 @@
 using System;
 
 
-namespace Bakery
+namespace Bakery.Models
 {
-  public class Item
+  public class Bread
   {
    public void ItemConstructor_CreatesInstanceOfItem_Item()
     {

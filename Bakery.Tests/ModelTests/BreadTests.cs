@@ -2,10 +2,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery;
 using System;
 
-namespace Bakery.Tests
+namespace Bakery.ModelTests
 {
   [TestClass]
-  public class ItemTests
+  public class BreadTests
   {
     [TestMethod]
       public void ItemConstructor_CreatesInstanceOfItem_Item()
