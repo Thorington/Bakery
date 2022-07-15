@@ -5,10 +5,23 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-   public void ItemConstructor_CreatesInstanceOfItem_Item()
-    {
-      // Item newItem = new Item("test"); //We pass in "test" as an argument here.
-      // Assert.AreEqual(typeof(Item), newItem.GetType());
-    }
+    public string PastryKind {get; set; }
+    public int Price {get; set; }
+
+    public Pastry(string pastryKind, int price)
+  {
+    PastryKind = pastryKind;
+    Price = price;
+  }
+
+  //   public int GetBreadPrice()
+  // {
+  //   return _price;
+  // }
+
+  //  public static int BreadDeal(Bread loaf, int newPrice)
+  // {
+  //   return bread._price * newPercentage;
+  // }
   }
 }

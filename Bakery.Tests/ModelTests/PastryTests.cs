@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery;
+using Bakery.Models;
 using System;
 
 namespace Bakery.ModelTests
@@ -8,10 +8,10 @@ namespace Bakery.ModelTests
   public class PastryTests
   {
     [TestMethod]
-      public void ItemConstructor_CreatesInstanceOfItem_Item()
+      public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      // Item newItem = new Item("test"); //We pass in "test" as an argument here.
-      // Assert.AreEqual(typeof(Item), newItem.GetType());
+      Pastry newPastryItem = new Pastry("test", 2);
+      Assert.AreEqual(typeof(Pastry), newPastryItem.GetType());
     }
     
   }
