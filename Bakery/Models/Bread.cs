@@ -6,31 +6,30 @@ namespace Bakery
   public class Bread
   {
     public int NumberOfLoaves { get; set; }
-    public int BasePriceBread {get; set; }
 
-
-    public Bread(int numberOfLoaves, int basePriceBread)
+    public void BreadObject(int numberOfLoaves)
   {
     NumberOfLoaves = numberOfLoaves;
-    BasePriceBread = basePriceBread;
   }
 
-    public string GetBreadPrice(int numberOfLoaves, int basePriceBread)
+    public int GetBreadPrice(int numberOfLoaves)
   {
     if (numberOfLoaves == 1)
     {
-      return basePriceBread.ToString("");
+      return 5;
     }
-    // else if (numberOfLoaves % 2 == 0)
-    // {
-    //   resultMultipleLoavesEven = ((numberOfLoaves * basePriceBread) * (2/3)).ToString("");
-    //   return resultMultipleLoavesEven;
-    // }
-    // else if (numberOfLoaves % 2 == 1)
-    // {
-    //   resultMultipleLoavesOdd = (((numberOfLoaves - 1) * (2/3)) + basePriceBread).ToString("");
-    //   return resultMultipleLoavesOdd;
-    // }
+    else if (numberOfLoaves % 2 == 0)
+    {
+      return ((numberOfLoaves * 5) * (2/3));
+    }
+    else if (numberOfLoaves % 2 == 1)
+    {
+      return (((numberOfLoaves - 1) * (2/3)) + 5);
+    }
+    else
+    {
+      return (000000);
+    }
   }
   }
 }
