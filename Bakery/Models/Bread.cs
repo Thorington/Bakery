@@ -16,9 +16,7 @@ namespace Bakery
 
     public double GetBreadPrice(double numberOfLoaves)
   {
-    int costPerLoaf = 5;
     int runningTotal = 0;
-
     int minOrderForDiscount = 2;
     int counter = 0;
 
@@ -26,7 +24,7 @@ namespace Bakery
     {
       if(counter < minOrderForDiscount)
       {
-      runningTotal += costPerLoaf;
+      runningTotal += 5;
       counter++;
       }
       else
