@@ -5,31 +5,20 @@ namespace Bakery
 {
   public class Pastry
   {
-    public int NumberOfPastries { get; set; }
+    public double PastryOrder { get; set; }
 
-    public void PastryObject(int numberOfPastries)
+    public void PastryObject(double pastryOrder)
   {
-    NumberOfPastries = numberOfPastries;
+    PastryOrder = pastryOrder;
   }
 
-    public int GetPastryPrice(int numberOfPastries)
+    public double GetPastryPrice(double pastryOrder)
   {
-    // if (numberOfPastries==1)
-    // {
-    //   return 2;
-    // }
-    // else if (numberOfPastries%2==0)
-    // {
-    //   return ((numberOfPastries*2)*(2/3));
-    // }
-    // else if (numberOfPastries%2==1)
-    // {
-    //   return (((numberOfPastries-1)*(2/3))+2);
-    // }
-    // else
-    // {
-    //   return (000000);
-    // }
+    double numberAtFullPrice = pastryOrder%3;
+    double numberAtDiscount = Math.Floor(pastryOrder/3);
+    double fullPriceCost = numberAtFullPrice*2;
+    double discountCost = numberAtDiscount*5;
+    return fullPriceCost + discountCost;
   }
   }
 }

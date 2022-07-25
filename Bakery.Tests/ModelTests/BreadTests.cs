@@ -13,6 +13,20 @@ namespace Bakery.ModelTests
       Bread newBreadOrder = new Bread();
       Assert.AreEqual(typeof(Bread), newBreadOrder.GetType());
     }
+
+    // [TestMethod]
+    //   public void GetBreadOrder_ReturnsBreadOrder_Bread()
+    //   {
+    //     //Arrange
+    //     double NumberOfLoaves = 2;
+
+    //     //Act
+    //     Bread newBread = new Bread(NumberOfLoaves);
+    //     double result = newBread.NumberOfLoaves;
+
+    //     //Assert
+    //     Assert.AreEqual(NumberOfLoaves, result);
+    //   }
     
   }
 }

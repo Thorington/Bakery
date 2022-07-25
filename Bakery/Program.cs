@@ -10,8 +10,8 @@ namespace Bakery
     Bread breadTotal = new Bread();
     Pastry pastryTotal = new Pastry();
 
-    Console.WriteLine("Welcome to Pierre's Bakery! We've got a few slammin' deals for you. Bread is $5 per loaf, two loaves for $10, and we're currently running a buy 2, get 1 free special! Pastries are $2 each, 3 for $5, 4 for $7, 5 for $9, or 6 for $10. Would you like to order something? Yes/No");
-    // string stringYesNoOrder = Console.ReadLine();
+    Console.WriteLine("Welcome to Pierre's Bakery! We've got a few slammin' deals for you. Bread is $5 per loaf, two loaves for $10, and we're currently running a buy 2, get 1 free special! Pastries are $2 each or 3 for $5. Would you like to order something? Yes/No");
+  
     if ((Console.ReadLine()).ToLower() == "yes")
     {
       Console.WriteLine("You smart cookie! Hahaha, see what we did there? Yes/No");
@@ -19,12 +19,12 @@ namespace Bakery
       if (stringYesNoUnderstand.ToLower() == "yes")
       {
         Console.WriteLine("How many loaves of bread would you like to order? Please enter a number:");
-        int breadOrder = int.Parse(Console.ReadLine());
+        double breadOrder = int.Parse(Console.ReadLine());
 
         Console.WriteLine("How many pastries would you like to order? Please enter a number:");
-        int pastryOrder = int.Parse(Console.ReadLine());
+        double pastryOrder = int.Parse(Console.ReadLine());
 
-        int orderTotal = ((breadTotal.GetBreadPrice(breadOrder)) + (pastryTotal.GetPastryPrice(pastryOrder)));
+        double orderTotal = ((breadTotal.GetBreadPrice(breadOrder)) + (pastryTotal.GetPastryPrice(pastryOrder)));
         Console.WriteLine("Thanks for your order! Your total is $" + orderTotal);
       }
       if (stringYesNoUnderstand.ToLower() == "no")

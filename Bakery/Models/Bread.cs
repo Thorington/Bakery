@@ -5,31 +5,36 @@ namespace Bakery
 {
   public class Bread
   {
-    public int NumberOfLoaves { get; set; }
+    public double NumberOfLoaves{ get; set; }
+
+  //Everything falls apart if the object is just called "Bread" so I'm wondering if I'm screwing up somewhere important with this whole thing.
 
     public void BreadObject(int numberOfLoaves)
   {
     NumberOfLoaves = numberOfLoaves;
   }
 
-    public int GetBreadPrice(int numberOfLoaves)
+    public double GetBreadPrice(double numberOfLoaves)
   {
-    if (numberOfLoaves == 1)
+    int costPerLoaf = 5;
+    int runningTotal = 0;
+
+    int minOrderForDiscount = 2;
+    int counter = 0;
+
+    for(int i = 0; i < numberOfLoaves; i++)
     {
-      return 5;
+      if(counter < minOrderForDiscount)
+      {
+      runningTotal += costPerLoaf;
+      counter++;
+      }
+      else
+      {
+        counter = 0;
+      }
     }
-    else if (numberOfLoaves % 2 == 0)
-    {
-      return ((numberOfLoaves * 5) * (2/3));
-    }
-    else if (numberOfLoaves % 2 == 1)
-    {
-      return (((numberOfLoaves - 1) * (2/3)) + 5);
-    }
-    else
-    {
-      return (000000);
-    }
+    return runningTotal;
   }
   }
 }
